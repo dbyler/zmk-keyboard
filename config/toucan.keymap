@@ -208,10 +208,10 @@
         symbols {
             display-name = "SYM";
             bindings = <
-                &trans      &trans              &trans              &trans      &trans      &trans          &kp AMPS    &trans      &kp LA(N8)  &trans      &kp PRCNT   &kp PIPE
-                &trans      &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp EXCL    &kp AT      &kp AMPS    &trans
-                &trans      &trans              &trans              &trans      &trans      &trans          &trans      &kp ASTRK   &kp LPAR    &kp RPAR    &kp DLLR    &trans
-                                                                    &trans      &trans      &trans          &trans      &trans      &trans
+                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &trans      &kp LA(N8)  &trans      &kp PRCNT   &kp PIPE
+                &trans         &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp EXCL    &kp AT      &kp AMPS    &trans
+                &trans         &trans              &trans              &trans      &trans      &trans          &trans      &kp ASTRK   &kp LPAR    &kp RPAR    &kp DLLR    &trans
+                                                                       &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
 
