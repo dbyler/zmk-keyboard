@@ -182,14 +182,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // Layer 0: Base (QWERTY with home row mods) - Voyager rows 2,3,4 → Toucan rows 1,2,3
+        // Layer 0: Base (QWERTY with home row mods)
         base {
             display-name = "BASE";
             bindings = <
                 &kp TAB                      &kp Q            &kp W            &lt NAV E                &lt SYM R            &lt FUNC T                     &kp Y                    &kp U            &kp I                &kp O                   &kp P            &kp DEL
                 &mt LALT ESC                 &hm_left LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt NUM G                     &ht_h_num NUM H          &hm_right RGUI J &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI &mt LALT SQT
                 &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z        &kp X            &ht_c_copy LG(C) C   &ht_v_paste LG(V) V  &ht_b_space SPACE B       &kp N                    &kp M            &kp COMMA            &kp DOT                 &ht_slash_bslh BSLH FSLH &kp RALT
-                                                                               &none            &kp SPACE       &kp ENTER                                                &lt NAV BSPC     &td_space   &none
+                                                                              &trans               &kp SPACE       &kp ENTER                                                &lt NAV BSPC     &td_space   &none
             >;
         };
 
@@ -200,7 +200,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans          &kp MINUS   &kp N7      &kp N8      &kp N9      &kp PRCNT   &kp BSLH
                 &trans      &trans      &trans      &trans      &trans      &trans          &kp PLUS    &kp N4      &kp N5      &kp N6      &kp COLON   &kp EQUAL
                 &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp N1      &kp N2      &kp N3      &trans      &trans
-                                                    &trans      &trans      &none           &none       &trans      &kp N0
+                                                    &trans      &trans      &trans          &trans      &trans      &kp N0
             >;
         };
 
@@ -211,7 +211,7 @@
                 &trans      &trans              &trans              &trans      &trans      &trans          &kp AMPS    &trans      &kp LA(N8)  &trans      &kp PRCNT   &kp PIPE
                 &trans      &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp EXCL    &kp AT      &kp AMPS    &trans
                 &trans      &trans              &trans              &trans      &trans      &trans          &trans      &kp ASTRK   &kp LPAR    &kp RPAR    &kp DLLR    &trans
-                                                                    &trans      &trans      &none           &none       &trans      &trans
+                                                                    &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
 
@@ -222,7 +222,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F10     &kp F13
                 &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11     &kp F14
                 &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F12     &kp F15
-                                                    &trans      &trans      &none           &none       &trans      &trans
+                                                    &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
 
@@ -233,7 +233,7 @@
                 &trans      &trans      &trans              &trans              &trans              &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREV      &kp C_PP        &kp C_NEXT      &to BASE
                 &trans      &trans      &trans              &trans              &trans              &trans          &trans          &trans          &trans          &trans          &kp C_MUTE      &trans
                 &trans      &trans      &hm_left LCTL LEFT  &hm_left LALT DOWN  &hm_left LGUI RIGHT &trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp C_VOL_UP    &kp C_BRI_UP
-                                                            &trans              &trans              &none           &none           &trans          &trans
+                                                            &trans              &trans              &trans          &trans          &trans          &trans
             >;
         };
 
@@ -244,7 +244,7 @@
                 &trans      &trans      &trans      &trans      &trans      &to BASE        &trans      &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &kp UP      &trans      &kp F9          &trans      &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp F10         &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
-                                                    &trans      &to BASE    &none           &none       &to BASE    &trans
+                                                    &trans      &to BASE    &trans          &trans      &to BASE    &trans
             >;
         };
     };
