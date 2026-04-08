@@ -17,35 +17,35 @@
         td_e: tap_dance_e {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&kp E>, <&kp E>, <&mo NAV>;
         };
 
         td_t: tap_dance_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&kp T>, <&kp T>, <&mo FUNC>;
         };
 
         td_g: tap_dance_g {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&kp G>, <&kp G>, <&mo NUM>;
         };
 
         td_del: tap_dance_del {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&kp DEL>, <&kp LA(DEL)>, <&kp LG(DEL)>;
         };
 
         td_space: tap_dance_space {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&kp SPACE>, <&kp SPACE>, <&to NAV>;
         };
 
@@ -53,7 +53,7 @@
         ht_bspc_alt_bspc: hold_tap_bspc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -62,7 +62,7 @@
         ht_c_copy: hold_tap_c_copy {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -71,7 +71,7 @@
         ht_v_paste: hold_tap_v_paste {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -80,7 +80,7 @@
         ht_b_space: hold_tap_b_space {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -89,7 +89,7 @@
         ht_h_num: hold_tap_h_num {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&to>, <&kp>;
@@ -98,7 +98,7 @@
         ht_slash_bslh: hold_tap_slash {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -108,7 +108,7 @@
         lt_bal: layer_tap_balanced {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
@@ -193,13 +193,15 @@
         compatible = "zmk,keymap";
 
         // Layer 0: Base (QWERTY with home row mods)
+        // TODO: L hyper key; r hyper key; figure out =, `, outer thumb keys
+
         base {
             display-name = "BASE";
             bindings = <
-                &kp TAB                      &kp Q            &kp W            &lt NAV E                &lt SYM R            &lt FUNC T                     &kp Y                    &kp U            &kp I                &kp O                   &kp P            &kp DEL
-                &mt LALT ESC                 &hm_left LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt_bal NUM G                     &ht_h_num NUM H          &hm_right RGUI J &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI &mt LALT SQT
-                &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z        &kp X            &ht_c_copy LG(C) C   &ht_v_paste LG(V) V  &ht_b_space SPACE B       &kp N                    &kp M            &kp COMMA            &kp DOT                 &ht_slash_bslh BSLH FSLH &kp RALT
-                                                                              &trans               &hm_left LGUI SPACE       &kp ENTER                                                &lt NAV BSPC     &td_space   &none
+                &kp TAB                         &kp Q            &kp W            &lt NAV E            &lt SYM R            &lt FUNC T           &kp Y                    &kp U            &kp I                &kp O                   &kp P                     &kp DEL
+                &mt LALT ESC                    &hm_left LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt_bal NUM G        &ht_h_num NUM H          &hm_right RGUI J &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI       &kp APOS
+                &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z            &kp X            &ht_c_copy LG(C) C   &ht_v_paste LG(V) V  &ht_b_space SPACE B  &kp N                    &kp M            &kp COMMA            &kp DOT                 &ht_slash_bslh BSLH FSLH  &kp RALT
+                                                                                  &trans               &hm_left LGUI SPACE  &kp ENTER            &lt NAV BSPC             &td_space        &none
             >;
         };
 
@@ -215,12 +217,13 @@
         };
 
         // Layer 2: Symbols
+        // TODO: clean up macros
         symbols {
             display-name = "SYM";
             bindings = <
-                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &trans      &kp LA(N8)  &trans      &kp PRCNT   &kp PIPE
-                &trans         &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp EXCL    &kp AT      &kp AMPS    &trans
-                &trans         &trans              &trans              &trans      &trans      &trans          &trans      &kp ASTRK   &kp LPAR    &kp RPAR    &kp DLLR    &trans
+                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &KP LA(N8)  &kp EXCL    &kp AT      &kp PRCNT   &kp PIPE
+                &trans         &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp LPAR    &kp RPAR    &kp AMPS    &trans
+                &trans         &trans              &trans              &trans      &trans      &trans          &trans      &kp CARET   &kp LBKT    &kp RBKT    &kp DLLR    &trans
                                                                        &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
@@ -229,25 +232,27 @@
         function {
             display-name = "FUNC";
             bindings = <
-                &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F10     &kp F13
-                &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11     &kp F14
-                &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F12     &kp F15
+                &trans      &trans      &trans      &trans      &trans      &trans          &kp F16     &kp F7      &kp F8      &kp F9      &kp F10     &kp F13
+                &trans      &trans      &trans      &trans      &trans      &trans          &kp F17     &kp F4      &kp F5      &kp F6      &kp F11     &kp F14
+                &trans      &trans      &trans      &trans      &trans      &trans          &kp F18     &kp F1      &kp F2      &kp F3      &kp F12     &kp F15
                                                     &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
 
         // Layer 4: Navigation/Media (skip RGB controls)
+        // TODO media player keys; remove wheel keys from Voyager?; wasd arrows?
         navigation {
             display-name = "NAV";
             bindings = <
-                &trans      &trans      &trans              &trans              &trans              &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREV      &kp C_PP        &kp C_NEXT      &to BASE
-                &trans      &trans      &trans              &trans              &trans              &trans          &trans          &trans          &trans          &trans          &kp C_MUTE      &trans
-                &trans      &trans      &hm_left LCTL LEFT  &hm_left LALT DOWN  &hm_left LGUI RIGHT &trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp C_VOL_UP    &kp C_BRI_UP
+                &trans      &trans      &trans              &trans              &trans              &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREV      &kp C_PP        &kp C_MUTE      &to BASE
+                &trans      &trans      &trans              &trans              &trans              &trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp C_VOL_UP    &kp C_BRI_UP
+                &trans      &trans      &hm_left LCTL LEFT  &hm_left LALT DOWN  &hm_left LGUI RIGHT &trans          &kp END         &kp PG_DN       &kp PG_UP       &kp HOME        &kp C_VOL_DN    &kp C_BRI_DN
                                                             &trans              &trans              &trans          &trans          &trans          &trans
             >;
         };
 
         // Layer 5: Mouse/Navigation (skip actual mouse keys, keep navigation)
+        // TODO anything here really as I don't have a way to activate
         mouse {
             display-name = "MOUSE";
             bindings = <
