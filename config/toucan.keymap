@@ -221,7 +221,7 @@
         symbols {
             display-name = "SYM";
             bindings = <
-                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &KP LA(N8)  &kp EXCL    &kp AT      &kp PRCNT   &kp PIPE
+                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &kp LA(N8)  &kp EXCL    &kp AT      &kp PRCNT   &kp PIPE
                 &trans         &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp LPAR    &kp RPAR    &kp AMPS    &trans
                 &trans         &trans              &trans              &trans      &trans      &trans          &trans      &kp CARET   &kp LBKT    &kp RBKT    &kp DLLR    &trans
                                                                        &trans      &trans      &trans          &trans      &trans      &trans
