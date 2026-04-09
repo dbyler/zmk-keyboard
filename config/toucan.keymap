@@ -161,12 +161,12 @@
         };
         combo_f1 {
             timeout-ms = <50>;
-            key-positions = <14 15>; // S D
+            key-positions = <2 3>; // W E
             bindings = <&kp F1>;
         };
         combo_f2 {
             timeout-ms = <50>;
-            key-positions = <15 16>; // D F
+            key-positions = <3 4>; // E R
             bindings = <&kp F2>;
         };
     };
