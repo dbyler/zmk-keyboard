@@ -154,6 +154,11 @@
             key-positions = <19 20 21>; // J K L
             bindings = <&kp LG(SPACE)>;
         };
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <8 9>; // I O
+            bindings = <&kp LG(LS(N4))>;
+        };
     };
 
     // Macros for string sequences
