@@ -159,6 +159,16 @@
             key-positions = <8 9>; // I O
             bindings = <&kp LG(LS(N4))>;
         };
+        combo_f1 {
+            timeout-ms = <50>;
+            key-positions = <13 14>; // A S
+            bindings = <&kp F1>;
+        };
+        combo_f2 {
+            timeout-ms = <50>;
+            key-positions = <15 16>; // D F
+            bindings = <&kp F2>;
+        };
     };
 
     // Macros for string sequences
