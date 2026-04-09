@@ -161,7 +161,7 @@
         };
         combo_f1 {
             timeout-ms = <50>;
-            key-positions = <13 14>; // A S
+            key-positions = <14 15>; // S D
             bindings = <&kp F1>;
         };
         combo_f2 {
