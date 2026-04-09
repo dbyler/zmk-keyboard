@@ -144,11 +144,6 @@
             key-positions = <7 8 9>; // U I O
             bindings = <&kp LA(LG(SPACE))>;
         };
-        combo_screenshot {
-            timeout-ms = <50>;
-            key-positions = <8 9>; // I O
-            bindings = <&kp LGUI(LSFT(4))>;
-        };
         combo_spotlight_left {
             timeout-ms = <50>;
             key-positions = <14 15 16>; // S D F
@@ -206,7 +201,7 @@
                 &kp TAB                         &kp Q            &kp W            &lt NAV E            &lt SYM R            &lt FUNC T           &kp Y                    &kp U            &kp I                &kp O                   &kp P                     &kp DEL
                 &mt LALT ESC                    &hm_left LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt_bal NUM G        &ht_h_num NUM H          &hm_right RGUI J &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI       &kp APOS
                 &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z            &kp X            &ht_c_copy LG(C) C   &ht_v_paste LG(V) V  &ht_b_space SPACE B  &kp N                    &kp M            &kp COMMA            &kp DOT                 &ht_slash_bslh BSLH FSLH  &kp RALT
-                                                                                  &kp F1               &hm_left LGUI SPACE  &kp ENTER            &lt NAV BSPC             &kp RGUI         &kp F2
+                                                                                  &kp F1               &hm_left LGUI SPACE  &kp ENTER            &lt NAV BSPC             &lt RGUI SPACE   &kp F2
             >;
         };
 
