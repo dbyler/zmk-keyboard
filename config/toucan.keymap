@@ -245,9 +245,9 @@
         symbols {
             display-name = "*_*";
             bindings = <
-                &mt GRAVE EQUAL &trans  &trans  &trans      &trans      &trans     &kp AMPS  &kp LA(N8)     &kp EXCL       &mt STAR LG(8)      &kp PRCNT  &trans
+                &mt EQUAL GRAVE &trans  &trans  &trans      &trans      &trans     &kp AMPS  &kp LA(N8)     &kp EXCL       &mt LS(8) STAR      &kp PRCNT  &trans
                 &trans          &kp AT  &trans  &kp LBRC    &kp RBRC    &trans     &kp HASH  &kp LBKT       &kp RBKT       &kp PIPE            &kp COLON  &trans
-                &trans          &trans  &trans  &trans      &trans      &trans     &kp DLLR  &mt LPAR LBRC  &mt RPAR RBRC  &kp CARET           &trans     &trans
+                &trans          &trans  &trans  &trans      &trans      &trans     &kp DLLR  &mt LBRC LPAR  &mt RBRC RPAR  &kp CARET           &trans     &trans
                                                 &trans      &trans      &trans     &trans    &trans         &trans
             >;
         };
