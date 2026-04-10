@@ -245,10 +245,10 @@
         symbols {
             display-name = "SYM";
             bindings = <
-                &studio_unlock &trans              &trans              &trans      &trans      &trans          &kp AMPS    &kp LA(N8)  &kp EXCL    &kp AT      &kp PRCNT   &kp PIPE
-                &trans         &macro_semicolon_1  &macro_semicolon_hs &trans      &trans      &trans          &kp HASH    &kp ASTRK   &kp LPAR    &kp RPAR    &kp AMPS    &trans
-                &trans         &trans              &trans              &trans      &trans      &trans          &trans      &kp CARET   &kp LBKT    &kp RBKT    &kp DLLR    &trans
-                                                                       &trans      &trans      &trans          &trans      &trans      &trans
+                &ht GRAVE EQUAL &trans  &trans  &trans      &trans      &trans     &kp AMPS  &kp LA(N8)     &kp EXCL       &ht ASTERISK LG(8)  &kp PRCNT  &kp trans
+                &trans          &kp AT  &trans  &kp LBRACE  &kp RBRACE  &trans     &kp HASH  &kp LBKT       &kp RBKT       &kp PIPE            &kp COLON  &trans
+                &trans          &trans  &trans  &trans      &trans      &trans     &kp DLLR  &ht LPAR LBRC  &ht RPAR RBRC  &kp CARET           &trans     &trans
+                                                &trans      &trans      &trans     &trans    &trans         &trans
             >;
         };
 
