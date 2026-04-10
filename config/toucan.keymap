@@ -245,7 +245,7 @@
         symbols {
             display-name = "SYM";
             bindings = <
-                &ht GRAVE EQUAL &trans  &trans  &trans      &trans      &trans     &kp AMPS  &kp LA(N8)     &kp EXCL       &ht STAR LG(8)      &kp PRCNT  &trans
+                &mt GRAVE EQUAL &trans  &trans  &trans      &trans      &trans     &kp AMPS  &kp LA(N8)     &kp EXCL       &mt STAR LG(8)      &kp PRCNT  &trans
                 &trans          &kp AT  &trans  &kp LBRC    &kp RBRC    &trans     &kp HASH  &kp LBKT       &kp RBKT       &kp PIPE            &kp COLON  &trans
                 &trans          &trans  &trans  &trans      &trans      &trans     &kp DLLR  &ht LPAR LBRC  &ht RPAR RBRC  &kp CARET           &trans     &trans
                                                 &trans      &trans      &trans     &trans    &trans         &trans
