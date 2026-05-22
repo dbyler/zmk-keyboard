@@ -148,7 +148,7 @@
             hold-trigger-on-release;
 		};
 
-        tcsl: thumb_cmd_space {
+        tcsl: thumb_cmd_space_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
@@ -158,7 +158,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-		tcsr: thumb_cmd_space {
+		tcsr: thumb_cmd_space_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
