@@ -124,6 +124,16 @@
         };
 
         // Home row mods (matching Voyager)
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
         hm_left: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -223,7 +233,7 @@
             display-name = ">_<";
             bindings = <
                 &kp TAB                         &kp Q            &kp W            &lt NAV E            &lt SYM R            &lt FUNC T           &kp Y                    &lt SYM U            &kp I                &kp O                   &kp P                     &kp DEL
-                &hyper_esc LC(LS(LA(LGUI))) ESC &hm_left LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt_bal NUM G        &ht_h_num NUM H          &hm_right RGUI J     &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI       &kp APOS
+                &hyper_esc LC(LS(LA(LGUI))) ESC &hm LSFT A  &hm_left LCTL S  &hm_left LALT D      &hm_left LGUI F      &lt_bal NUM G        &ht_h_num NUM H          &hm_right RGUI J     &hm_right LALT K     &hm_right RCTL L        &hm_right RSFT SEMI       &kp APOS
                 &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z            &kp X            &ht_c_copy LG(C) C   &ht_v_paste LG(V) V  &ht_b_space SPACE B  &kp N                    &kp M                &kp COMMA            &kp DOT                 &ht_slash_bslh BSLH FSLH  &kp RALT
                                                                                   &kp F1               &hm_left LGUI SPACE  &kp ENTER            &lt NAV BSPC             &hm_left LGUI SPACE  &kp F2
             >;
