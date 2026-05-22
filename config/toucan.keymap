@@ -164,17 +164,17 @@
             bindings = <&kp LG(SPACE)>;
         };
         combo_screenshot {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <8 9>; // I O
             bindings = <&kp LG(LS(N4))>;
         };
         combo_f1 {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <2 3>; // W E
             bindings = <&kp F1>;
         };
         combo_f2 {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <3 4>; // E R
             bindings = <&kp F2>;
         };
