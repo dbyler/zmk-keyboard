@@ -143,7 +143,18 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-    };
+
+        tcs: thumb_cmd_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+	};
 
     // Combos (matching Voyager)
     combos {
@@ -225,7 +236,7 @@
                 &kp TAB                         &kp Q        &kp W        &lt NAV E           &lt SYM R            &lt FUNC T           &kp Y            &lt SYM U        &kp I        &kp O        &kp P                     &kp DEL
                 &hyper_esc LC(LS(LA(LGUI))) ESC &hml LSFT A  &hml LCTL S  &hml LALT D         &hml LGUI F          &lt_bal NUM G        &ht_h_num NUM H  &hmr RGUI J      &hmr LALT K  &hmr RCTL L  &hmr RSFT SEMI            &kp APOS
                 &ht_bspc_alt_bspc LA(BSPC) BSPC &kp Z        &kp X        &ht_c_copy LG(C) C  &ht_v_paste LG(V) V  &ht_b_space SPACE B  &kp N            &kp M            &kp COMMA    &kp DOT      &ht_slash_bslh BSLH FSLH  &kp RALT
-                                                                          &kp F1              &hml LGUI SPACE      &kp ENTER            &lt NAV BSPC     &hml LGUI SPACE  &kp F2
+                                                                          &kp F1              &hml LGUI SPACE      &kp ENTER            &lt NAV BSPC     &tcs LGUI SPACE  &kp F2
             >;
         };
 
